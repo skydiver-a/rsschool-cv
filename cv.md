@@ -1,13 +1,12 @@
 ## Anna Kravchenko
-***
 
 
 ### Contacts
 ***
 
 
-Phone: +7 (916) 206-83-87
-Email: flamedance.ann@gmail.com
+Phone: +7 (916) 206-83-87  
+Email: flamedance.ann@gmail.com  
 
 
 
@@ -15,10 +14,10 @@ Email: flamedance.ann@gmail.com
 ***
 
 
-Was engaged in assembling computers at school.
-Worked in a computer service during my studies at the institute.
-From 2008 to the present time I've been working in the technical support of Yandex.Market.
-Want to learn something new.
+Was engaged in assembling computers at school.  
+Worked in a computer service during my studies at the institute.  
+From 2008 to the present time I've been working in the technical support of Yandex.Market.  
+Want to learn something new.  
 
 
 
@@ -66,6 +65,6 @@ Haven't yet had a job related to training.
 ***
 
 
-Russian - Native
-English - A1-A2
-Turkish - A1
+Russian - Native  
+English - A1-A2  
+Turkish - A1  
