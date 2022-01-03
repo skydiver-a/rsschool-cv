@@ -1,10 +1,9 @@
-.bubble {
-    content: '';
-    position: relative;
-    height: 200px;
-    width: 200px;
-    background: #54abfb;
-    border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
-    opacity: 0.7;
-    border: 2px solid #3d93ff;
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
