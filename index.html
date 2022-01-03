@@ -2,12 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel='stylesheet' type='text/css' href='style.css'>
+    <title>Curriculum Vitae</title>
+    <link rel='stylesheet' type='text/css' href='styles/styles.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class='bubble'></div>
+    <header class='header'>
+        <div class='wrapper'></div>
+    </header>
+    <main class='wrapper'>
+        <section class='promo'>
+            <div class="wrapper">
+                <div class='layout-column'>
+                    <div class='presenting'>
+                        <h1>Anna Kravchenko</h1>
+                        <span>The Beginner</span>
+                    </div>
+                    <div class='contacts'>
+                        <h4>Contacts</h4>
+                        <span>
+                            <a href='tel:+79162068387'>+7 (916) 206-83-87</a>
+                        </span>
+                        <span>
+                            <a href='mailto:flamedance.ann@gmail.com'>flamedance.ann@gmail.com</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='cv'>
+            <div class='wrapper'>
+                <div class='layout-column'>
+                    <div class='block'>
+                        <h4>About</h4>
+                        <span>Was engaged in assembling computers at school.<br>
+                            Worked in a computer service during my studies at the institute.<br>
+                            From 2008 to the present time I've been working in the technical support of Yandex.Market.<br>
+                            Want to learn something new.</span>
+                    </div>
+                    <div class='block'>
+                        <h4>Skills</h4>
+                        <ul>
+                            <li>Computer Assembly</li>
+                            <li>Network configuration</li>
+                            <li>HTML, CSS</li>
+                            <li>JavaScript, Python, C++ Basic</li>
+                            <li>Git, GitHub</li>
+                            <li>PyCharm, VSCode, Qt Creator</li>
+                            <li>Adobe PhotoShop</li>
+                        </ul>
+                    </div>
+                    <div class='block'>
+                        <h4>Work Experience</h4>
+                        <span>Haven't yet had a job related to training.</span>
+                    </div>
+                </div>
+                <div class='layout-column'>
+                    <div class='block'>
+                        <h4>Code Example</h4>
+                            <code>
+                                    a, b = int(input())<br>
+                                    print(*(item for item in list(map(int, input().split())) if item >= 0))
+                            </code>
+                    </div>
+                    <div class='block'>
+                        <h4>Education</h4>
+                        <ul>
+                            <li>Moscow Technical University of Communications and Informatics</li>
+                            <li>RS School</li>
+                        </ul>
+                    </div>
+                    <div class='block'>
+                        <h4>Languages</h4>
+                        <ul>
+                            <li>Russian - Native</li>
+                            <li>English - A1-A2</li>
+                            <li>Turkish - A1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class='footer'>
+        <div class="wrapper">
+            <div class='layout-column'>
+                <div class='logo'>
+                    <a href='https://rs.school/js/'>
+                        <div id='logo'><img src='images/rs_school_js.svg' alt='RS School Logo' width='100'/></div>
+                    </a>
+                </div>
+                <div class='footer-data'>
+                    <a href='https://gihub.com/skydiver-a'>GitHub</a><br>
+                    <span>2022</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
