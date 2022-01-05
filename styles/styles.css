@@ -1,5 +1,4 @@
 :root {
-    --color: #dddddd;
     --color-text: #5e5e5e;
     --color-h: #939393;
     --content-width: 1197px;
@@ -7,54 +6,61 @@
 
 html {
     font-size: 10px;
-    background-color: var(--color);
-    height: 100vh;
 }
 
 body {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-family: 'Mulish', sans-serif;
     font-family: 'Nunito Sans', sans-serif;
     color: var(--color-text);
 }
 
-h1 {
+h1, h2 {
     font-family: 'Nunito Sans', Verdana, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 44px;
-    line-height: 50px;
-    color: var(--color-h);
-}
-
-h4 {
-    font-family: 'Nunito Sans', Verdana, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
     color: var(--color-h);
 }
 
 .wrapper {
     max-width: var(--content-width);
     margin: auto;
-    background-color: white;
 }
 
-.layout-column {
+.layout-2-column {
     display: flex;
     justify-content: space-between;
     align-content: stretch;
-    padding: 0 30px 0 30px;
 }
 
-.presenting, .contacts {
+.header__wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation__link {
+    list-style: none;
+    padding: 0 20px 0 20px;
+    cursor: pointer;
+    font-size: 2.2rem;
+}
+
+.header__contacts {
+    flex-grow: 2;
+}
+
+.section__image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section__text {
     display: flex;
     flex-direction: column;
-}
-
-.block {
-    flex: 1 1 auto;
-    align-self: auto;
+    align-items: right;
 }
