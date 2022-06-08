@@ -22,6 +22,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #000;
 }
 /* Wrapper */
 .wrapper,
@@ -68,7 +69,6 @@ a {
 }
 
 .slider .left-slide_content .left-slide_content-text {
-    /*color: #FFF;*/
     padding: 2.5em 0em;
     font-size: 2em;
 }
@@ -124,7 +124,7 @@ a {
     transition: all 0.5s;
 
     text-align: center;
-    color: #AAA; /* change color of slider */
+    color: #AAA;
 }
 
 .slider__controls .controls__control-up,
