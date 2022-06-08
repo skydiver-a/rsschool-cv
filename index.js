@@ -1,8 +1,10 @@
 const leftSlide = document.querySelectorAll('.slider__left-slide'),
-    rightSlide = document.querySelectorAll('.slider__right-slide');
+    rightSlide = document.querySelectorAll('.slider__right-slide'),
+    contentText = document.querySelectorAll('.left-slide_content-text');
 let windowHeight = document.querySelector('.wrapper').clientHeight;
 
 const colors = ['#446A64', '#F76600', '#FEF943', '#9EB2AF'];
+const textColors = ['#B4DBD3', '#FFC5B4', '#A4A001', '#5D534D'];
 
 let index = 0,
     wheeling;
@@ -21,10 +23,12 @@ window.onload = function() {
   addButtonClickHandler();
 }
 
+
 const addResizeHandler = () => {
   windowHeight = document.querySelector('.wrapper').clientHeight;
   for (let i = 0; i < leftSlide.length; i++) {
     leftSlide[i].style.backgroundColor = colors[i];
+    contentText[i].style.color = textColors[i];
     leftSlide[i].style.top = - windowHeight*i + "px";
     rightSlide[i].style.top = windowHeight*i + "px";
   }

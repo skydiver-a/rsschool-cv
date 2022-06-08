@@ -67,9 +67,10 @@ a {
     -webkit-transform: translate(-50%, -50%);
 }
 
-.slider .left-slide_content p {
-    color: #FFF;
+.slider .left-slide_content .left-slide_content-text {
+    /*color: #FFF;*/
     padding: 2.5em 0em;
+    font-size: 2em;
 }
 /* Right */
 .slider .slider__right {
