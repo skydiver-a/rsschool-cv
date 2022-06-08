@@ -3,8 +3,8 @@ const leftSlide = document.querySelectorAll('.slider__left-slide'),
     contentText = document.querySelectorAll('.left-slide_content-text');
 let windowHeight = document.querySelector('.wrapper').clientHeight;
 
-const colors = ['#446A64', '#F76600', '#FEF943', '#9EB2AF'];
-const textColors = ['#B4DBD3', '#FFC5B4', '#A4A001', '#5D534D'];
+const colors = ['#446A64', '#F76600', '#FFE100', '#9EB2AF'];
+const textColors = ['#B4DBD3', '#FFC5B4', '#433B02', '#5D534D'];
 
 let index = 0,
     wheeling;
