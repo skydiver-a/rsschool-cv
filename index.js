@@ -4,7 +4,8 @@ let windowHeight = document.querySelector('.wrapper').clientHeight;
 
 const colors = ['#446A64', '#F76600', '#FEF943', '#9EB2AF'];
 
-let index = 0;
+let index = 0,
+    wheeling;
 
 window.onload = function() {
   // resize the window
@@ -12,7 +13,9 @@ window.onload = function() {
   this.addEventListener('resize', addResizeHandler);
 
   // mouse scrolling
-  addMouseScrollHandler();
+  document.addEventListener('wheel', (event) => {
+    addMouseScrollHandler(event);
+  }, {passive: false});
 
   // button clicking
   addButtonClickHandler();
@@ -27,8 +30,23 @@ const addResizeHandler = () => {
   }
 }
 
-const addMouseScrollHandler = () => {
+const addMouseScrollHandler = (event) => {
+  clearTimeout(wheeling);
+  event.preventDefault();
+  let e = window.event || e;
+  const delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
 
+  wheeling = setTimeout(() => {
+    wheeling = undefined;
+    if (delta === 1) {
+      clickToMoveUp();
+    }
+    if (delta === -1) {
+      clickToMoveDown();
+    }
+  }, 100);
+
+  smoothTransition();
 }
 
 const addButtonClickHandler = () => {
